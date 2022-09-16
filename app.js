@@ -71,7 +71,7 @@ function questions() {
             }
         }
     ]).then(answers => {
-        const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
+        const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOffice);
         teamMembers.push(manager);
         idArray.push(answers.managerId);
         createTeam();

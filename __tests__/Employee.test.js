@@ -11,32 +11,32 @@ test("create new employee", () => {
 
 // test create object / info
 test('create new employee with info', () => {
-    const employee = new Employee(id, name, email);
+    const employee = new Employee(name, id, email);
     
-    expect(employee.id).toBe(id);
     expect(employee.name).toBe(name);
+    expect(employee.id).toBe(id);
     expect(employee.email).toBe(email);
 });
 
 // get employee id
 test('get employee id', () => {
-    const employee = new Employee(id, name, email);
+    const employee = new Employee(name, id, email);
     expect(employee.getId()).toBe(id);
 });
 
 // get employee name
 test('get employee name', () => {
-    const employee = new Employee(id, name, email);
+    const employee = new Employee(name, id, email);
     expect(employee.getName()).toBe(name);
 });
 
 // get employee email
 test('get employee email', () => {
-    const employee = new Employee(id, name, email);
+    const employee = new Employee(name, id, email);
     expect(employee.getEmail()).toBe(email);
 });
 
 test('get employee name', () => {
-    const employee = new Employee(id, name, email);
+    const employee = new Employee(name, id, email);
     expect(employee.getRole()).toBe('Employee');
 });

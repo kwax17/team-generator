@@ -10,7 +10,7 @@ test('create new manager', () => {
 // gets office
 test('gets school', () => {
     const manager = new Manager(17, 'Kelly', 'kelwacker@gmail.com', office);
-    expect(manager.getOfficeNumber()).toBe(office);
+    expect(manager.getOffice()).toBe(office);
 });
 
 // gets role
