@@ -18,5 +18,8 @@
   "homepage": "https://github.com/kwax17/team-generator#readme",
   "devDependencies": {
     "jest": "^29.0.3"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
   }
 }
